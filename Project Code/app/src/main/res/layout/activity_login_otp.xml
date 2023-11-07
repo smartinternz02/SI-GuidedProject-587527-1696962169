@@ -105,6 +105,7 @@
             android:background="@drawable/edit_text_rounded_corner"
             android:elevation="5dp"
             android:hint="OTP"
+            android:textColor="@color/black"
             android:inputType="number"
             android:maxLength="6"
             android:minHeight="48dp"

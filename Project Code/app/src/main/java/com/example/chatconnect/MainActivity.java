@@ -2,8 +2,13 @@ package com.example.chatconnect;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
+import android.Manifest;
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.ImageButton;
@@ -59,7 +64,10 @@ public class MainActivity extends AppCompatActivity {
             if(task.isSuccessful()){
                 String token = task.getResult();
                 FirebaseUtil.currentUserDetails().update("fcmToken",token);
-
+                int pushNotificationPermisionStatus = ContextCompat.checkSelfPermission(this, android.Manifest.permission.POST_NOTIFICATIONS);
+                if(pushNotificationPermisionStatus != PackageManager.PERMISSION_GRANTED) {
+                    ActivityCompat.requestPermissions(this, new String[]{ Manifest.permission.POST_NOTIFICATIONS},1);
+                }
             }
         });
     }

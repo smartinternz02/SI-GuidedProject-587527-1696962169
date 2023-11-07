@@ -8,6 +8,7 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:outlineAmbientShadowColor="@color/black"
         android:id="@+id/recyler_view"/>
 
 </RelativeLayout>

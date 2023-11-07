@@ -81,6 +81,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/search_user_layout"
         android:padding="10dp"
+        android:outlineAmbientShadowColor="@color/black"
         android:id="@+id/search_user_recycler_view"
         />
 

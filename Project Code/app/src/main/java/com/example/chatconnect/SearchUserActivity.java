@@ -43,7 +43,7 @@ public class SearchUserActivity extends AppCompatActivity {
         searchButton.setOnClickListener(v -> {
             String searchTerm = searchInput.getText().toString();
             if(searchTerm.isEmpty() || searchTerm.length()<3){
-                searchInput.setError("Invalid Username");
+                searchInput.setError("Min 3 characters required");
                 return;
             }
             setupSearchRecyclerView(searchTerm);
@@ -54,7 +54,7 @@ public class SearchUserActivity extends AppCompatActivity {
 
         Query query = FirebaseUtil.allUserCollectionReference()
                 .whereGreaterThanOrEqualTo("username",searchTerm)
-                .whereLessThanOrEqualTo("username",searchTerm+'\uf8ff');
+               .whereLessThanOrEqualTo("username",searchTerm+'\uf8ff');
 
         FirestoreRecyclerOptions<UserModel> options = new FirestoreRecyclerOptions.Builder<UserModel>()
                 .setQuery(query,UserModel.class).build();

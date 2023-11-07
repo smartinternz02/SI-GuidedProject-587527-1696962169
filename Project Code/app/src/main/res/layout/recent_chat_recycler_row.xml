@@ -26,6 +26,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 tools:text="User name"
+                android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:id="@+id/user_name_text"/>
@@ -42,7 +43,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="+000000000000"
-            android:id="@+id/last_message_text"/>
+            android:id="@+id/last_message_text"
+            android:textColor="@color/black"/>
     </LinearLayout>
 
 </LinearLayout>

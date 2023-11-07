@@ -112,6 +112,7 @@
             android:background="@drawable/edit_text_rounded_corner"
             android:elevation="5dp"
             android:hint="Mobile"
+            android:textColor="@color/black"
             android:inputType="phone"
             android:minHeight="48dp"
             android:padding="8dp" />
