@@ -4,8 +4,8 @@
 A Real-Time Chat and Communication App
 
 ## Project Members
-AMBATI NIRANJANA SRINJVASU(21BCB7027)
-S.JAYCHANDRA(21BCB7014)
+##### AMBATI NIRANJANA SRINJVASU(21BCB7027)
+##### S.JAYCHANDRA(21BCB7014)
 
 ## How to use(Manual)
 After downloading the app:
