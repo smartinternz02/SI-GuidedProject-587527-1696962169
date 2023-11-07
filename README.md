@@ -20,4 +20,4 @@ After downloading the app:
 5) Search for user by clicking on the SearchIcon(Usenames are Case Sensitive).
 6) You can now chat.
 7) You can update profile pic and username
-> **_NOTE:_** You can only recieve notifications from the user if you have atleast one interaction and at first Both have to search for other and message. Then you can see a chatroom created and also you can recieve Notifications
+> **_NOTE:_** You can only recieve notifications from the user if you have atleast one interaction, at first both have to search for each other and message. Then you can see a chatroom created and also you can recieve Notifications if the app is minimised
